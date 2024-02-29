@@ -1,0 +1,64 @@
+@import url("../../../styles.css");
+@import url("animate.css");
+
+section {
+  height: 70vh;
+  padding-top: 100px;
+  background-color: #29243a;
+}
+.contact {
+  max-width: 1190px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.conForm {
+  color: var(--branco);
+}
+form input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 450px;
+  height: 40px;
+}
+form textarea {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 450px;
+  height: 100px;
+}
+form a{
+  padding: 8px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: var(--btn-cor-1);
+  text-decoration: none;
+  color: var(--branco);
+  font-size: var(--fonte-media);
+  font-weight: 500;
+}
+.conText{
+    max-width: 500px;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    background-color: rgb(62, 58, 65);
+    padding: 30px;
+    height: 370px;
+}
+.conText h2{
+    font-size: var(--fonte-10);
+    line-height: 1.1em;
+    align-items: center;
+}
+.conText p{
+    align-items: center;
+    font-size: 16px;
+    margin-top: 20px;
+}

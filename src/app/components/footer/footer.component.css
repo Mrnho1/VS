@@ -1,0 +1,35 @@
+@import url("../../../styles.css");
+@import url("animate.css");
+
+footer{
+    height: 40vh;
+}
+.footer{
+    max-width: 1190px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 30px; */
+    color: var(--branco);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.logo{
+    font-size: var(--fonte-logo);
+}
+.talk h3{
+    font-size: var(--fonte-4);
+    line-height: 1.1em;
+}
+.space{
+    margin-top: 20px;
+}
+.space a{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: var(--fonte-media);
+}
+.social h3{
+    font-size: var(--fonte-4);
+    line-height: 1.1em;
+}

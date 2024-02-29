@@ -1,0 +1,56 @@
+<header>
+    <nav>
+      
+      <mat-toolbar [class.mat-toolbar-scrolled]="isScrolled">
+        <a mat-button routerLink="" fragment="start"><span id="logo">Visionis</span></a>
+        <span class="example-spacer"></span>
+        <div id="nav">
+          <a mat-button routerLink="/" fragment="start">Início</a>
+          <a mat-button routerLink="/" fragment="about">Sobre</a>
+          <a mat-button routerLink="/" fragment="job">Nosso Trabalho</a>
+          <a mat-button routerLink="/" fragment="contact">Contato</a>
+        </div>
+        <button
+          mat-icon-button
+          (click)="sidenav.toggle()"
+          id="menu"
+          aria-label="Example icon-button with menu icon"
+        >
+          <mat-icon>menu</mat-icon>
+        </button>
+      </mat-toolbar>
+      <mat-sidenav-container>
+        <mat-sidenav
+          #sidenav
+          [fixedInViewport]="true"
+          [fixedTopGap]="60"
+          mode="over"
+        >
+          <div id="side-nav">
+            <div>
+              <a (click)="sidenav.close()" mat-button routerLink="/"
+                ><mat-icon>home</mat-icon>Início</a
+              >
+            </div>
+            <div>
+              <a (click)="sidenav.close()" mat-button routerLink="/"
+                ><mat-icon>lightbulb</mat-icon>Soluções</a
+              >
+            </div>
+            <div>
+              <a (click)="sidenav.close()" mat-button routerLink="/"
+                ><mat-icon>business_center</mat-icon>Nosso Trabalho</a
+              >
+            </div>
+            <div>
+              <a (click)="sidenav.close()" mat-button routerLink="/"
+                ><mat-icon>people</mat-icon>Contato</a
+              >
+            </div>
+          </div>
+        </mat-sidenav>
+        <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+      </mat-sidenav-container>
+    </nav>
+  </header>
+  

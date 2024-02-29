@@ -1,0 +1,16 @@
+@import url("../styles.css");
+@import url("animate.css");
+
+
+.heartBeat {
+  max-width: 1190px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* animation: flipOutY; */
+  animation: rotateIn;
+
+  animation-duration: 1s;
+}

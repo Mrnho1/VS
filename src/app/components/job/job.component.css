@@ -1,0 +1,71 @@
+@import url("../../../styles.css");
+@import url("animate.css");
+/* https://i.ibb.co/BG1zh1H/gifVS.gif */
+.job {
+  height: 70vh;
+  background-image: url("https://i.ibb.co/BG1zh1H/gifVS.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.jobText {
+  opacity: 0;
+  transition: opacity 1s ease, transform 3s ease;
+  max-width: 1190px;
+  margin: auto;
+  opacity: 0;
+  padding: 10%;
+}
+.jobText.visible {
+  opacity: 1;
+  animation-duration: 1s;
+}
+.jobText.visible p {
+  animation: fadeInUp;
+  animation-duration: 1.5s;
+}
+.jobText.visible .btnJob {
+  animation: fadeInUp;
+  animation-duration: 1.5s;
+}
+p {
+  font-size: var(--fonte-subtitulo);
+  color: var(--branco);
+  padding: 10px 0px;
+  /* margin: 5px 0; */
+  word-spacing: 3px;
+  line-height: 1.1em;
+}
+.btnJob{
+    padding-top: 30px;
+}
+a {
+  padding: 8px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: var(--btn-cor-1);
+  text-decoration: none;
+  color: var(--branco);
+  font-size: var(--fonte-media);
+  font-weight: 500;
+}
+
+
+.cardJob{
+  margin-top: 150px;
+  max-width: 1190px;
+  margin: auto;
+  
+}
+
+
+@media (max-width: 900px) {
+  .job.visible .jobText {
+    animation: none;
+  }
+  p {
+    font-size: var(--fonte-logo);
+  }
+}

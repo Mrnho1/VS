@@ -1,0 +1,100 @@
+@import url("../../../styles.css");
+@import url("animate.css");
+
+.section {
+  opacity: 0;
+  transition: opacity 1s ease, transform 3s ease;
+  height: 100vh;
+  
+}
+
+.section.visible {
+  opacity: 1;
+  animation-duration: 2s;
+}
+
+.section.visible h2{
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+
+.section.visible p{
+  animation: fadeInUp;
+  animation-duration: 1.5s;
+}
+.section.visible .btn{
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+
+
+.about {
+  max-width: 1190px;
+  margin: auto;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* background-color: red; */
+}
+img{
+  width: 25vw;
+}
+.aboutText{
+  display: block;
+  /* background-color: red; */
+}
+h2 {
+  font-size: var(--fonte-subtitulo);
+  color: var(--branco);
+  /* background-color: rgb(92, 101, 109); */
+  padding: 20px 0px;
+  margin: 10px 0;
+  word-spacing: 3px;
+  line-height: 1.1em;
+}
+p{
+  font-size: var(--fonte-grande);
+  color: var(--branco);
+  margin-bottom: 10px;
+}
+.btn{
+  padding-top: 20px;
+}
+ a{
+  padding: 8px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: var(--btn-cor-1);
+  text-decoration: none;
+  color: var(--branco);
+  font-size: var(--fonte-media);
+  font-weight: 700;
+}
+
+
+@media (max-width: 900px){
+  .section{
+    height: 60vh;
+    opacity: 1;
+    animation: none;
+  }
+  .section.visible{
+    animation: none;
+  }
+  .section.visible h2{
+    animation: none;
+  }
+  .section.visible p{
+    animation: none;
+  }
+  .section.visible button{
+    animation: none;
+  }
+  img{
+    display: none;
+  }
+}

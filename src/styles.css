@@ -1,0 +1,200 @@
+/* You can add global styles to this file, and also import other style files */
+/* Meyer's Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Definição de variáveis CSS */
+:root {
+  /* Variaveis da barra de navegação */
+  --nv-espacamento-padrao1: 10px;
+  --nv-espacamento-padrao2: 20px;
+  --nv-espacamento-padrao3: 30px;
+  --nv-espacamento-padrao4: 40px;
+  --nv-espacamento-padrao5: 50px;
+  --nv-cor-fundo: #1d1733;
+  --nv-cor-fonte: #efefef;
+  --nv-tamanho-fonte1: 16px;
+  --nv-tamanho-fonte2: 18px;
+  --nv-tamanho-fonte3: 20px;
+  --nv-tamanho-fonte4: 22px;
+  --nv-tamanho-fonte5: 24px;
+  --nv-tamanho-fonte6: 26px;
+  --nv-tamanho-fonte7: 28px;
+
+  /* CORES */
+  --cor-principal: #1d1733;
+  --cor-secundaria: #041caf;
+  --cor-ternaria: #c00cf7;
+  --branco: #ffffff;
+  --preto: #080808;
+
+  /* ESPAÇAMENTO */
+  --espaco-pequeno: 10px;
+  --espaco-padrao: 16px;
+  --espaco-medio: 32px;
+  --espaco-grande: 64px;
+
+  /* TAMANHO FONTES */
+  --fonte-pequena: 14px;
+  --fonte-media: 16px;
+  --fonte-grande: 18px;
+  --fonte-extra-grande: 20px;
+  --fonte-logo: 32px;
+  --fonte-titulo: 42px;
+  --fonte-subtitulo: 38px;
+  
+  --fonte-1:22px;
+  --fonte-2:24px;
+  --fonte-3:26px;
+  --fonte-4:28px;
+  --fonte-5:30px;
+  --fonte-6:32px;
+  --fonte-7:34px;
+  --fonte-8:36px;
+  --fonte-9:38px;
+  --fonte-10:58px;
+
+
+
+  /* BTN VARIAVEIS */
+  --fonte-btn:24px;
+  --btn-cor-1:#67308C;
+}
+html,
+body {
+  height: 100%;
+  background-color: #ffffff;
+}
+body {
+  margin: 0;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
